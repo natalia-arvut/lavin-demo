@@ -10,6 +10,7 @@
 <meta property="og:description" content="Impresa di gessatori specializzata in intonaci, cartongesso, stucchi, restauri e cappotti termici. Balerna · Vezia · Chiasso.">
 <meta property="og:type" content="business.business">
 <meta property="og:locale" content="it_CH">
+<meta property="og:image" content="https://natalia-arvut.github.io/lavin-demo/img/hero.jpg">
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,12 +36,12 @@ tailwind.config = {
   .reveal.in{opacity:1;transform:none}
   .hairline{height:1px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.14),transparent)}
   .kicker{letter-spacing:.22em;text-transform:uppercase;font-weight:600;font-size:.72rem}
-  .svc:hover img{transform:scale(1.06)}
-  .svc img{transition:transform .9s cubic-bezier(.2,.6,.2,1)}
+  .svc:hover img.ph{transform:scale(1.06)}
+  .svc img.ph{transition:transform .9s cubic-bezier(.2,.6,.2,1)}
   .navlink{position:relative}
   .navlink::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:#00B0F0;transition:width .3s}
   .navlink:hover::after{width:100%}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.svc img{transition:none}html{scroll-behavior:auto}}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.svc img.ph{transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body class="antialiased">
@@ -49,8 +50,8 @@ tailwind.config = {
 <header id="hdr" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
   <div class="max-w-[1280px] mx-auto px-5 sm:px-8 flex items-center justify-between h-[72px]">
     <a href="#top" class="flex items-center gap-3 group">
-      <img src="logo.png" alt="Lavin lavori d'intonaco SA" class="w-9 h-9 drop-shadow-sm">
-      <span class="font-display font-700 text-[1.05rem] leading-none tracking-tight" id="brandtxt">Lavin <span class="text-cyan">SA</span></span>
+      <img src="img/logo-mark.png" alt="Lavin lavori d'intonaco SA" class="w-9 h-9 object-contain">
+      <span class="font-display font-700 text-[1.05rem] leading-none tracking-tight" id="brandtxt">LAVIN <span class="text-cyan">SA</span></span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-[.92rem] font-500" id="navwrap">
       <a href="#servizi" class="navlink">Servizi</a>
@@ -67,10 +68,10 @@ tailwind.config = {
 
 <!-- HERO -->
 <section id="top" class="relative min-h-[100svh] flex flex-col justify-end overflow-hidden">
-  <img src="img/hero.jpg" alt="Facciata con intonaco e cappotto termico realizzata da Lavin SA" class="absolute inset-0 w-full h-full object-cover" style="object-position:60% 30%">
-  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(9,11,15,.62) 0%,rgba(9,11,15,.18) 30%,rgba(9,11,15,.34) 58%,rgba(9,11,15,.92) 100%)"></div>
-  <div class="absolute inset-0 hidden sm:block" style="background:linear-gradient(90deg,rgba(9,11,15,.66) 0%,rgba(9,11,15,.12) 48%,transparent 70%)"></div>
-  <div class="absolute inset-0 sm:hidden" style="background:linear-gradient(90deg,rgba(9,11,15,.55) 0%,rgba(9,11,15,.30) 60%,rgba(9,11,15,.12) 100%)"></div>
+  <img src="img/hero.jpg" alt="Residenza con facciata realizzata da Lavin SA, Ticino" class="absolute inset-0 w-full h-full object-cover" style="object-position:60% 35%">
+  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(9,11,15,.55) 0%,rgba(9,11,15,.10) 26%,rgba(9,11,15,.30) 55%,rgba(9,11,15,.93) 100%)"></div>
+  <div class="absolute inset-0 hidden sm:block" style="background:linear-gradient(90deg,rgba(9,11,15,.70) 0%,rgba(9,11,15,.18) 46%,transparent 68%)"></div>
+  <div class="absolute inset-0 sm:hidden" style="background:linear-gradient(90deg,rgba(9,11,15,.55) 0%,rgba(9,11,15,.32) 60%,rgba(9,11,15,.15) 100%)"></div>
 
   <div class="relative max-w-[1280px] mx-auto w-full px-5 sm:px-8 pb-10 sm:pb-14 pt-28">
     <p class="kicker text-cyan mb-5 reveal">Impresa di gessatori · Mendrisiotto, Ticino</p>
@@ -93,7 +94,7 @@ tailwind.config = {
     <div class="mt-12 sm:mt-14 pt-7 border-t border-white/20 grid grid-cols-3 gap-4 max-w-[640px] reveal">
       <div><div class="font-display font-700 text-white text-[1.9rem] sm:text-[2.4rem] leading-none">1983</div><div class="text-white/65 text-[.8rem] mt-1.5">Anno di fondazione</div></div>
       <div><div class="font-display font-700 text-white text-[1.9rem] sm:text-[2.4rem] leading-none">9</div><div class="text-white/65 text-[.8rem] mt-1.5">Specializzazioni</div></div>
-      <div><div class="font-display font-700 text-white text-[1.9rem] sm:text-[2.4rem] leading-none">SA</div><div class="text-white/65 text-[.8rem] mt-1.5">Balerna · Vezia · Chiasso</div></div>
+      <div><div class="font-display font-700 text-white text-[1.9rem] sm:text-[2.4rem] leading-none">3</div><div class="text-white/65 text-[.8rem] mt-1.5">Sedi: Balerna · Vezia · Chiasso</div></div>
     </div>
   </div>
 </section>
@@ -132,90 +133,7 @@ tailwind.config = {
       <p class="text-concrete max-w-[34ch] text-[.98rem] leading-relaxed">Dall'intonaco di fondo alle facciate con cappotto termico: ogni fase seguita dai nostri gessatori.</p>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <!-- cards -->
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/intonaci.jpg" alt="Intonaci in genere" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">01</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Intonaci in genere</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Intonaci di fondo e di finitura per interni ed esterni.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/stucchi.jpg" alt="Rifiniture in gesso e stucchi" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">02</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Rifiniture in gesso e simili</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Finiture lisce e decorative in gesso e stucco.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/cartongesso.jpg" alt="Opere di cartongesso" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">03</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Opere di cartongesso</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Pareti e controsoffitti in lastre di gesso.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/restauri.jpg" alt="Restauri di opere murarie" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">04</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Restauri di opere murarie</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Recupero di murature e facciate storiche.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/speciali.jpg" alt="Stucchi" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">05</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Stucchi</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Stucchi tradizionali e finiture decorative.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/calcestruzzi.jpg" alt="Risanamento di calcestruzzi" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">06</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Risanamento di calcestruzzi</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Ripristino e protezione del calcestruzzo.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/speciali.jpg" alt="Opere speciali" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">07</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Opere speciali</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Soluzioni su misura per esigenze particolari.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/pavimenti.jpg" alt="Pavimenti tecnici" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">08</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Pavimenti tecnici</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Massetti e pavimenti tecnici autolivellanti.</p>
-        </div>
-      </article>
-      <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal">
-        <div class="aspect-[4/3] overflow-hidden"><img src="img/facciate.jpg" alt="Rivestimento di facciate con cappotti termici" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/25 to-transparent"></div>
-        <div class="absolute bottom-0 inset-x-0 p-6">
-          <span class="font-display text-cyan/90 text-[.78rem] font-600">09</span>
-          <h3 class="font-display font-700 text-white text-[1.3rem] leading-tight mt-1">Facciate con cappotti termici</h3>
-          <p class="text-white/70 text-[.9rem] mt-1.5 leading-snug">Rivestimento e isolamento termico delle facciate.</p>
-        </div>
-      </article>
-    </div>
+    <div id="cards" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
   </div>
 </section>
 
@@ -239,7 +157,7 @@ tailwind.config = {
       </a>
     </div>
     <div class="reveal order-1 lg:order-2">
-      <div class="rounded-3xl overflow-hidden shadow-2xl"><img src="img/facciate.jpg" alt="Posa di cappotto termico su facciata" class="w-full h-full object-cover aspect-[4/3]"></div>
+      <div class="rounded-3xl overflow-hidden shadow-2xl"><img src="img/feat-facciate.jpg" alt="Edificio con facciata e cappotto termico realizzati da Lavin SA" class="w-full h-full object-cover aspect-[4/3]"></div>
     </div>
   </div>
 </section>
@@ -248,7 +166,7 @@ tailwind.config = {
 <section class="relative bg-plaster2 overflow-hidden">
   <div class="max-w-[1280px] mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
     <div class="reveal">
-      <div class="rounded-3xl overflow-hidden shadow-xl"><img src="img/restauri.jpg" alt="Restauro di muratura storica in Ticino" class="w-full h-full object-cover aspect-[5/4]"></div>
+      <div class="rounded-3xl overflow-hidden shadow-xl"><img src="img/band-restauro.jpg" alt="Restauro di muratura in pietra in Ticino" class="w-full h-full object-cover aspect-[5/4]"></div>
     </div>
     <div class="reveal">
       <p class="kicker text-cyandk mb-4">Restauri · Opere murarie</p>
@@ -287,19 +205,19 @@ tailwind.config = {
           <p class="text-white/70 mt-1.5 leading-snug">Via Sottobisio 26<br>6828 Balerna</p>
         </div>
         <div class="rounded-2xl border border-white/12 bg-white/[.03] p-6">
-          <div class="text-cyan font-600 text-[.78rem] uppercase tracking-wider">Succursale</div>
-          <div class="font-display font-700 text-[1.25rem] mt-2">Vezia</div>
-          <p class="text-white/70 mt-1.5 leading-snug">6943 Vezia</p>
+          <div class="text-cyan font-600 text-[.78rem] uppercase tracking-wider">Sede / Succursale</div>
+          <div class="font-display font-700 text-[1.25rem] mt-2">Chiasso · Vezia</div>
+          <p class="text-white/70 mt-1.5 leading-snug">Casella Postale 2147, 6830 Chiasso<br>Succursale 6943 Vezia</p>
         </div>
         <div class="rounded-2xl border border-white/12 bg-white/[.03] p-6">
-          <div class="text-cyan font-600 text-[.78rem] uppercase tracking-wider">Casella Postale</div>
-          <div class="font-display font-700 text-[1.25rem] mt-2">Chiasso</div>
-          <p class="text-white/70 mt-1.5 leading-snug">Casella Postale 2147<br>6830 Chiasso</p>
+          <div class="text-cyan font-600 text-[.78rem] uppercase tracking-wider">Telefono</div>
+          <div class="font-display font-700 text-[1.25rem] mt-2">091 683 44 35</div>
+          <p class="text-white/70 mt-1.5 leading-snug">Natel 079 866 30 59<br>Fax 091 683 58 35</p>
         </div>
         <div class="rounded-2xl border border-white/12 bg-white/[.03] p-6">
-          <div class="text-cyan font-600 text-[.78rem] uppercase tracking-wider">Recapiti</div>
-          <div class="font-display font-700 text-[1.25rem] mt-2">Telefono &amp; Fax</div>
-          <p class="text-white/70 mt-1.5 leading-snug">Tel. 091 683 44 35<br>Fax 091 683 58 35</p>
+          <div class="text-cyan font-600 text-[.78rem] uppercase tracking-wider">E-mail</div>
+          <div class="font-display font-700 text-[1.25rem] mt-2">Scriveteci</div>
+          <a href="mailto:info@lavin-sa.ch" class="text-cyan hover:text-white mt-1.5 inline-block transition-colors">info@lavin-sa.ch</a>
         </div>
       </div>
     </div>
@@ -310,7 +228,7 @@ tailwind.config = {
 <footer class="bg-ink text-white/55 border-t border-white/10">
   <div class="max-w-[1280px] mx-auto px-5 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[.85rem]">
     <div class="flex items-center gap-3">
-      <img src="logo.png" alt="" class="w-7 h-7 opacity-90">
+      <img src="img/logo-mark.png" alt="" class="w-7 h-7 object-contain opacity-90">
       <span class="font-display font-600 text-white/80">Lavin lavori d'intonaco SA</span>
     </div>
     <p>Impresa di gessatori dal 1983 · Balerna · Vezia · Chiasso · Ticino</p>
@@ -328,8 +246,9 @@ tailwind.config = {
   "foundingDate":"1983",
   "telephone":"+41916834435",
   "faxNumber":"+41916835835",
+  "email":"info@lavin-sa.ch",
   "image":"https://natalia-arvut.github.io/lavin-demo/img/hero.jpg",
-  "logo":"https://lavin-sa.ch/logo.png",
+  "logo":"https://natalia-arvut.github.io/lavin-demo/img/logo-mark.png",
   "sameAs":["https://www.instagram.com/sa.lavin/"],
   "address":{"@type":"PostalAddress","streetAddress":"Via Sottobisio 26","postalCode":"6828","addressLocality":"Balerna","addressRegion":"Ticino","addressCountry":"CH"},
   "areaServed":{"@type":"AdministrativeArea","name":"Ticino"},
@@ -348,10 +267,35 @@ tailwind.config = {
 </script>
 
 <script>
+// service cards
+const SERVICES=[
+  ['01','Intonaci in genere','Intonaci di fondo e di finitura per interni ed esterni.','c-intonaci.jpg'],
+  ['02','Rifiniture in gesso e simili','Finiture lisce e rasature in gesso e simili.','c-rifiniture.jpg'],
+  ['03','Opere di cartongesso','Pareti e controsoffitti in lastre di gesso.','c-cartongesso.jpg'],
+  ['04','Restauri di opere murarie','Recupero di murature e facciate storiche.','c-restauri.jpg'],
+  ['05','Stucchi','Stucchi tradizionali e finiture decorative.','c-stucchi.jpg'],
+  ['06','Risanamento di calcestruzzi','Ripristino e protezione del calcestruzzo.','c-calcestruzzi.jpg'],
+  ['07','Opere speciali','Soluzioni su misura per esigenze particolari.','c-speciali.jpg'],
+  ['08','Pavimenti tecnici','Massetti e pavimenti tecnici autolivellanti.','c-pavimenti.jpg'],
+  ['09','Facciate con cappotti termici','Rivestimento e isolamento termico delle facciate.','c-facciate.jpg'],
+];
+const wrap=document.getElementById('cards');
+wrap.innerHTML=SERVICES.map(([n,t,d,img])=>`
+  <article class="svc group relative rounded-2xl overflow-hidden bg-ink reveal min-h-[300px] flex">
+    <img src="img/${img}" alt="${t} — Lavin SA" class="ph absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(15,17,21,.95) 0%,rgba(15,17,21,.78) 26%,rgba(15,17,21,.34) 52%,rgba(15,17,21,.05) 78%)"></div>
+    <img src="img/logo-mark.png" alt="" class="absolute top-4 left-4 w-7 h-7 object-contain opacity-90 drop-shadow">
+    <div class="relative mt-auto p-6 w-full">
+      <div class="font-display font-700 text-cyan text-[1.5rem] leading-none mb-2">${n}</div>
+      <h3 class="font-display font-700 text-white text-[1.32rem] leading-tight">${t}</h3>
+      <p class="text-white/80 text-[.92rem] mt-2 leading-snug">${d}</p>
+    </div>
+  </article>`).join('');
+
 // header scroll state
 const hdr=document.getElementById('hdr');
 function onScroll(){
-  if(window.scrollY>40){hdr.classList.add('bg-plaster/95','backdrop-blur','shadow-[0_2px_20px_-8px_rgba(0,0,0,.3)]');hdr.style.backgroundColor='rgba(244,241,234,.92)';document.getElementById('brandtxt').style.color='#14161B';document.querySelectorAll('#navwrap a').forEach(a=>a.style.color='#14161B');}
+  if(window.scrollY>40){hdr.style.backgroundColor='rgba(244,241,234,.92)';hdr.classList.add('backdrop-blur','shadow-[0_2px_20px_-8px_rgba(0,0,0,.3)]');document.getElementById('brandtxt').style.color='#14161B';document.querySelectorAll('#navwrap a').forEach(a=>a.style.color='#14161B');}
   else{hdr.style.backgroundColor='transparent';hdr.classList.remove('shadow-[0_2px_20px_-8px_rgba(0,0,0,.3)]');document.getElementById('brandtxt').style.color='#fff';document.querySelectorAll('#navwrap a').forEach(a=>a.style.color='#fff');}
 }
 onScroll();window.addEventListener('scroll',onScroll,{passive:true});
